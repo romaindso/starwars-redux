@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import items from './items.js';
+import starships from './starships.js';
 
 export default combineReducers({
-  items
+  starships
 })

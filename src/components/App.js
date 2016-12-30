@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-//import logo from '../assets/images/logo.svg';
-import {Navbar, Nav, NavItem} from 'react-bootstrap';
-import Item from './Item.js';
+import {Navbar} from 'react-bootstrap';
+import Starship from './Starship.js';
 import './App.css';
+
 
 class App extends Component {
 
   componentWillMount(){
-    this.props.itemsActions.fetchAll();
+    this.props.starshipsActions.fetchStarship();
   }
 
   render() {
     const {
-      items
+      starships
     } = this.props;
 
     return (
@@ -20,17 +20,15 @@ class App extends Component {
         <Navbar>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">PWA</a>
+              <a href="#">Star Wars PWA</a>
             </Navbar.Brand>
           </Navbar.Header>
-          <Nav>
-            <NavItem eventKey={1} href="#">Link</NavItem>
-            <NavItem eventKey={2} href="#">Link</NavItem>
-          </Nav>
         </Navbar>
-        {items && items.items ? items.items.map((item, i) => {
-          return <p key={i}>{item}</p>
-        }) : null}
+        <div className="App-items-list">
+          {starships && starships.items ? starships.items.map((starship, i) => {
+            return <Starship key={i} starship={starship} />
+          }) : null}
+        </div>
       </div>
     );
   }

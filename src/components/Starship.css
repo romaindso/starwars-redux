@@ -1,0 +1,21 @@
+.Starship {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.Starship h1 {
+  margin-top: 0;
+}
+
+.Starship-wrapper-content {
+  margin-left: 10px;
+}
+
+.Starship-wrapper-content span {
+  font-size: 20px;
+  color: #265ca2;
+}
