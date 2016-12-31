@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
-  border-right: 1px solid #ccc;
   padding: 20px;
 }
 

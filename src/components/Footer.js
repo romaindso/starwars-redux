@@ -8,7 +8,7 @@ class Footer extends Component {
 
     return (
       <footer className="Footer">
-        <span>Thanks to @phalt for is formidable open <a href="https://swapi.co">API</a></span>
+        <span>Thanks to @phalt for is awesome open <a href="https://swapi.co">API</a></span>
       </footer>
     );
   }
