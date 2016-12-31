@@ -1,11 +1,11 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as starshipsActions from '../actions/starships.js';
-import StarshipDetails from '../components/StarshipDetails';
+import StarshipDetails from '../components/screens/StarshipDetails';
 
 const mapStateToProps = (state) => {
   return {
-    starships: state.starships
+    starshipDetails: state.starshipDetails
   }
 }
 

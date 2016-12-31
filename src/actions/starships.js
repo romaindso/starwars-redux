@@ -1,10 +1,3 @@
-// export const REQUEST_STARSHIPS = 'REQUEST_STARSHIPS';
-// const requestStarships = () => {
-//   return {
-//     type: REQUEST_STARSHIPS
-//   }
-// }
-
 export const RECEIVE_STARSHIPS = 'RECEIVE_STARSHIPS';
 const receiveStarships = data => {
   return {
@@ -15,7 +8,6 @@ const receiveStarships = data => {
 
 export const fetchStarship = () => {
   return function (dispatch) {
-    //dispatch(requestStarships());
     return fetch('http://swapi.co/api/starships/')
     .then(response => {
       return response.json();
@@ -39,7 +31,7 @@ export const fetchStarshipDetails = (starshipId) => {
     .then(response => {
       return response.json();
     }).then(data => {
-      dispatch(receiveStarshipDetails(data.results));
+      dispatch(receiveStarshipDetails(data));
     }).catch(err => {
       console.log(err);
     });
