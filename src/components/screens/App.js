@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Navbar} from 'react-bootstrap';
+import { Navbar, Jumbotron } from 'react-bootstrap';
 import Footer from '../Footer.js';
 import Sidebar from '../Sidebar.js';
 import './App.css';
@@ -18,6 +18,9 @@ class App extends Component {
             </Navbar.Brand>
           </Navbar.Header>
         </Navbar>
+        <Jumbotron>
+          <h1>Explore data from<span>STAR WARS</span></h1>
+        </Jumbotron>
         <div className="App-wrapper">
           <Sidebar />
           {this.props.children}

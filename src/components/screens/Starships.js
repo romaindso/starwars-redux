@@ -13,6 +13,7 @@ class Starships extends Component {
 
     return (
       <div className="Starships">
+        <h1>Starships</h1>
         {starships && starships.items ? starships.items.map((starship, i) => {
           return <Starship key={i} starship={starship} />
         }) : null}

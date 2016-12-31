@@ -1,4 +1,8 @@
-/*.Starships {
-  display: flex;
-  flex-flow: row wrap;
-}*/
+.Starships {
+  padding-top: 15px;
+}
+
+.Starships > h1 {
+  margin-left: 20px;
+  color: #ebd800;
+}

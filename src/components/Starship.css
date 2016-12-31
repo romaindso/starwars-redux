@@ -10,11 +10,8 @@
 }
 
 .Starship h1 {
+  font-size: 30px;
   margin-top: 0;
-}
-
-.Starship-wrapper-content {
-  margin-left: 10px;
 }
 
 .Starship-wrapper-content a {

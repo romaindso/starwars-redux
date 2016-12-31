@@ -8,8 +8,25 @@
   margin-bottom: 0;
 }
 
+.App .jumbotron {
+  margin-bottom: 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #1c1e22;
+}
+
+.App .jumbotron h1 {
+  color: #ebd800;
+}
+
+.App .jumbotron span {
+  display: block;
+  font-style: italic;
+}
+
 .App-wrapper{
   flex: 1;
   display: flex;
   flex-flow: row nowrap;
+  /*padding-top: 20px;*/
 }
