@@ -2,9 +2,12 @@
   display: flex;
   flex-flow: row;
   justify-content: flex-start;
-  margin-top: 20px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+.Starship:last-child {
+  border-right: 0;
 }
 
 .Starship h1 {
@@ -15,7 +18,15 @@
   margin-left: 10px;
 }
 
+.Starship-wrapper-content a {
+  color: inherit;
+}
+
+.Starship-wrapper-content a:hover {
+  color: #ebd800;
+  text-decoration: none;
+}
+
 .Starship-wrapper-content span {
   font-size: 20px;
-  color: #265ca2;
 }

@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import Starship from '../Starship.js';
+import './Starships.css';
 
 class Starships extends Component {
 

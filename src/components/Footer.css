@@ -1,0 +1,25 @@
+.Footer {
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: black;
+}
+
+.Footer::after {
+  content: "";
+  background: url('../assets/images/footer.jpg') no-repeat top center;
+  background-size: contain;
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.Footer span {
+  margin-left: 50px;
+  z-index: 1;
+}

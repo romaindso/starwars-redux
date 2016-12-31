@@ -17,7 +17,7 @@ class Starship extends Component {
         <div className="Starship-wrapper-content">
           <Link to={`/${id}`}><h1>{name}</h1></Link>
           <span>{model}</span>
-          <p>Size: {length} (meters)</p>
+          <p>Length : {length} (meters)</p>
         </div>
       </div>
     );

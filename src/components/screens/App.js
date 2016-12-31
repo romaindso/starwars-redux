@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar} from 'react-bootstrap';
+import Footer from '../Footer.js';
 import './App.css';
 
 
@@ -9,7 +10,7 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Navbar>
+        <Navbar inverse>
           <Navbar.Header>
             <Navbar.Brand>
               <a href="#">Star Wars PWA</a>
@@ -19,6 +20,7 @@ class App extends Component {
         <div className="App-wrapper">
           {this.props.children}
         </div>
+        <Footer />
       </div>
     );
   }
