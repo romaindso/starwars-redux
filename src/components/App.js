@@ -1,19 +1,11 @@
 import React, { Component } from 'react';
 import {Navbar} from 'react-bootstrap';
-import Starship from './Starship.js';
 import './App.css';
 
 
 class App extends Component {
 
-  componentWillMount(){
-    this.props.starshipsActions.fetchStarship();
-  }
-
   render() {
-    const {
-      starships
-    } = this.props;
 
     return (
       <div className="App">
@@ -24,10 +16,8 @@ class App extends Component {
             </Navbar.Brand>
           </Navbar.Header>
         </Navbar>
-        <div className="App-items-list">
-          {starships && starships.items ? starships.items.map((starship, i) => {
-            return <Starship key={i} starship={starship} />
-          }) : null}
+        <div className="App-wrapper">
+          {this.props.children}
         </div>
       </div>
     );
