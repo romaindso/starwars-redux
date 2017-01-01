@@ -28,5 +28,6 @@
   flex: 1;
   display: flex;
   flex-flow: row nowrap;
-  /*padding-top: 20px;*/
+  background-color: #151515;
+  border-top: 2px solid black;
 }

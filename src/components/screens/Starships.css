@@ -1,8 +1,9 @@
 .Starships {
-  padding-top: 15px;
+  padding: 15px 0 20px 40px;
 }
 
 .Starships > h1 {
-  margin-left: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #32383e;
   color: #ebd800;
 }

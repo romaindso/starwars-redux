@@ -1,3 +1,27 @@
 .StarshipDetails {
+  font-size: 16px;
+  padding: 15px 0 20px 40px;
+}
 
+.StarshipDetails-properties {
+  margin-top: 20px;
+}
+
+.StarshipDetails-properties span {
+  color: #ebd800;
+}
+
+.StarshipDetails ul {
+  padding-left: 20px;
+}
+
+.StarshipDetails li {
+  list-style: none;
+  padding: 4px 0;
+}
+
+.StarshipDetails img {
+  margin-right: 10px;
+  border-radius: 2px;
+  border: 5px solid #2d2d2d;
 }

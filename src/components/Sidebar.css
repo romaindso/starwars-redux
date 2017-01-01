@@ -1,16 +1,22 @@
 .Sidebar {
   padding-top: 40px;
+  padding-bottom: 20px;
   width: 250px;
-  border-right: 2px solid #3c3c3c;
+  border-right: 2px solid #32383e;
 }
 
 .Sidebar li {
-  margin-bottom: 10px;
+  padding: 10px;
   font-size: 20px;
   list-style: none;
+  letter-spacing: 2px;
+  background-color: #32383e;
+  border-radius: 2px;
+  border: 1px solid black;
 }
 
 .Sidebar li a {
+  text-transform: uppercase;
   text-decoration: none;
   color: inherit;
 }
