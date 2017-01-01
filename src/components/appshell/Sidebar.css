@@ -24,3 +24,18 @@
 .Sidebar li a:hover {
   color: #ebd800;
 }
+
+@media screen and (max-width: 480px) {
+  .Sidebar {
+    padding-top: 0;
+    width: 200px;
+  }
+
+  .Sidebar ul {
+    padding-left: 0;
+  }
+
+  .Sidebar li {
+    font-size: 16px;
+  }
+}

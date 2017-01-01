@@ -4,7 +4,7 @@ import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 import thunk from 'redux-thunk';
-import App from './components/screens/App';
+import App from './components/appshell/App';
 import StarshipsContainer from './containers/Starships';
 import StarshipDetailsContainer from './containers/StarshipDetails';
 import './index.css';

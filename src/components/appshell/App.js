@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, Jumbotron } from 'react-bootstrap';
-import Footer from '../Footer.js';
-import Sidebar from '../Sidebar.js';
+import Footer from './Footer.js';
+import Sidebar from './Sidebar.js';
 import './App.css';
 
 

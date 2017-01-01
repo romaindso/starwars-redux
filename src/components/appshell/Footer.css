@@ -9,7 +9,7 @@
 
 .Footer::after {
   content: "";
-  background: url('../assets/images/footer.jpg') no-repeat top center;
+  background: url('../../assets/images/footer.jpg') no-repeat top center;
   background-size: contain;
   opacity: 0.1;
   top: 0;
