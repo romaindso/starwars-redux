@@ -29,5 +29,8 @@ self.addEventListener('fetch', function(event){
     caches.match(event.request).then(response => {
       return response || fetch(event.request);
     })
+    .catch(err => {
+      console.log('Service Worker : fetch error ' + err);
+    })
   );
 });
