@@ -5,6 +5,7 @@ self.addEventListener('install', function(e){
       console.log("Service Worker : cache app shell");
       return cache.addAll([
         '/',
+        '/manifest.json',
         '/index.html',
         '/bootstrap-theme.min.css',
         '/bootstrap.min.css',
