@@ -5,7 +5,7 @@ class StarshipDetails extends Component {
 
   componentWillMount(){
     const { params } = this.props
-    if(params.id){
+    if(process.env.NODE_ENV !== 'production' && params.id){
       this.props.starshipsActions.fetchStarshipDetails(params.id);
     }
   }
@@ -36,12 +36,14 @@ class StarshipDetails extends Component {
             </ul>
             <p>Built with love by <b>{manufacturer}</b></p>
           </div>
+          {process.env.NODE_ENV !== 'production' ?
           <div className="StarshipDetails-pilots">
             <h4>Pilots (fake) :</h4>
             <img src="http://facetheforce.today/random/150?r=1" alt="pilot" />
             <img src="http://facetheforce.today/random/150?r=2" alt="pilot" />
             <img src="http://facetheforce.today/random/150?r=3" alt="pilot" />
           </div>
+          : null }
         </div>
       </div>
     );
