@@ -10,8 +10,8 @@ self.addEventListener('install', function(e){
         './favicon.ico',
         './bootstrap-theme.min.css',
         './bootstrap.min.css',
-        './static/js/main.242846c5.js',
-        './static/js/main.242846c5.js.map',
+        './static/js/main.654275d1.js',
+        './static/js/main.654275d1.js.map',
         './static/css/main.999d12a1.css',
         './static/css/main.999d12a1.css.map',
         './static/media/footer.f2d9fcde.jpg'
