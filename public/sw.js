@@ -4,14 +4,16 @@ self.addEventListener('install', function(e){
     caches.open('mycache').then(function(cache) {
       console.log("Service Worker : cache app shell");
       return cache.addAll([
-        '/',
-        '/manifest.json',
-        '/index.html',
-        '/bootstrap-theme.min.css',
-        '/bootstrap.min.css',
-        '/static/js/main.5871976a.js',
-        '/static/css/main.6c2c66c5.css',
-        '/static/media/footer.f2d9fcde.jpg'
+        './',
+        './manifest.json',
+        './index.html',
+        './bootstrap-theme.min.css',
+        './bootstrap.min.css',
+        './static/js/main.5871976a.js',
+        './static/js/main.5871976a.js.map',
+        './static/css/main.6c2c66c5.css',
+        './static/css/main.6c2c66c5.css.map',
+        './static/media/footer.f2d9fcde.jpg'
       ])
       .then(() => {
         console.log("Service Worker : installed");
