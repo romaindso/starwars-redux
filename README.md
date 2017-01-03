@@ -1,6 +1,7 @@
 # react-pwa-experiments
 
-Some experiments with Progressive Web Apps https://developers.google.com/web/progressive-web-apps/
+Some experiments with [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps/)  
+[Demo here](https://romaindso.github.io/react-pwa-experiments) (Works better in local mode because no https restriction)
 
 ## Progressive Web App checklist
 
