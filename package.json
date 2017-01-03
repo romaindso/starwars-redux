@@ -2,7 +2,7 @@
   "name": "react-pwa-experiments",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://romaindso.github.io/react-pwa-experiments/",
+  "homepage": "https://romaindso.github.io/react-pwa-experiments",
   "devDependencies": {
     "react-scripts": "0.8.4",
     "redux-devtools": "^3.3.1"
