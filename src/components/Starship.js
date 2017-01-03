@@ -15,7 +15,9 @@ class Starship extends Component {
     return (
       <div className="Starship">
         <div className="Starship-wrapper-content">
-          <Link to={`/${id}`}><h1>{name}</h1></Link>
+          {process.env.NODE_ENV !== 'production' ?
+            (<Link to={`/${id}`}><h1>{name}</h1></Link>) : (<h1>{name}</h1>)
+          }
           <span>{model}</span>
           <p>Length : {length} (meters)</p>
         </div>
