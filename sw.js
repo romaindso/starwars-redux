@@ -9,8 +9,8 @@ self.addEventListener('install', function(e){
         '/index.html',
         '/bootstrap-theme.min.css',
         '/bootstrap.min.css',
-        '/favicon.ico',
-        '/static/js/bundle.js',
+        '/static/js/main.5871976a.js',
+        '/static/css/main.6c2c66c5.css',
         '/static/media/footer.f2d9fcde.jpg'
       ])
       .then(() => {
