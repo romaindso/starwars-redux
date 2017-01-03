@@ -12,7 +12,7 @@ Some experiments with Progressive Web Apps https://developers.google.com/web/pro
 
 #### Todo
 * [ ] Switch to Material Design for a better App-like style
-* [ ] Deploy on github pages with HTTPS (let's encrypt)
+* [ ] Deploy on github pages with HTTPS
 * [ ] Fresh - Always up-to-date thanks to the service worker update process.
 * [ ] Re-engageable with push notifications
 * [ ] ...
