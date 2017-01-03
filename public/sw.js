@@ -7,12 +7,13 @@ self.addEventListener('install', function(e){
         './',
         './manifest.json',
         './index.html',
+        './favicon.ico',
         './bootstrap-theme.min.css',
         './bootstrap.min.css',
-        './static/js/main.5871976a.js',
-        './static/js/main.5871976a.js.map',
-        './static/css/main.6c2c66c5.css',
-        './static/css/main.6c2c66c5.css.map',
+        './static/js/main.5f73011a.js',
+        './static/js/main.5f73011a.js.map',
+        './static/css/main.999d12a1.css',
+        './static/css/main.999d12a1.css.map',
         './static/media/footer.f2d9fcde.jpg'
       ])
       .then(() => {
