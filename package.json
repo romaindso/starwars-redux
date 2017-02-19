@@ -1,8 +1,8 @@
 {
-  "name": "react-pwa-experiments",
+  "name": "starwars-redux",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://romaindso.github.io/react-pwa-experiments",
+  "homepage": "https://romaindso.github.io/starwars-redux",
   "devDependencies": {
     "react-scripts": "0.8.4",
     "redux-devtools": "^3.3.1"
