@@ -6,19 +6,9 @@
     <link rel="stylesheet" href="%PUBLIC_URL%/bootstrap.min.css">
     <link rel="stylesheet" href="%PUBLIC_URL%/bootstrap-theme.min.css">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-    <title>react-pwa-experiments</title>
+    <title>starwars-redux</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="text/javascript">
-    if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('%PUBLIC_URL%/sw.js').then(function(){
-        console.log("Service Worker : Registered");
-      }).catch(function(err){
-        console.log("Service Worker : Registration failed", err);
-      });
-    }
-    </script>
   </body>
 </html>
