@@ -15,7 +15,7 @@ class Starship extends Component {
     return (
       <div className="Starship">
         <div className="Starship-wrapper-content">
-          <Link to={`/${id}`}><h1>{name}</h1></Link>
+          <Link to={`starships/${id}`}><h1>{name}</h1></Link>
           <span>{model}</span>
           <p>Length : {length} (meters)</p>
         </div>

@@ -14,7 +14,7 @@ class App extends Component {
         <Navbar inverse>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Star Wars PWA</a>
+              <a href="#">Starwars Redux</a>
             </Navbar.Brand>
           </Navbar.Header>
         </Navbar>

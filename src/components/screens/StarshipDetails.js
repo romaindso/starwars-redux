@@ -4,6 +4,7 @@ import './StarshipDetails.css';
 class StarshipDetails extends Component {
 
   componentWillMount(){
+    console.log(this.props);
     const { params } = this.props
     if(process.env.NODE_ENV !== 'production' && params.id){
       this.props.starshipsActions.fetchStarshipDetails(params.id);

@@ -1,8 +1,8 @@
 import React, { Component} from 'react';
 import Starship from '../Starship.js';
-import './Starships.css';
+import './StarshipsList.css';
 
-class Starships extends Component {
+class StarshipsList extends Component {
 
   componentWillMount(){
     this.props.starshipsActions.fetchStarship();
@@ -12,7 +12,7 @@ class Starships extends Component {
     const {starships} = this.props;
 
     return (
-      <div className="Starships">
+      <div className="StarshipsList">
         <h1>Starships</h1>
         {starships && starships.items ? starships.items.map((starship, i) => {
           return <Starship key={i} starship={starship} />
@@ -22,4 +22,4 @@ class Starships extends Component {
   }
 }
 
-export default Starships;
+export default StarshipsList;
