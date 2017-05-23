@@ -20,7 +20,7 @@ class StarshipDetails extends Component {
       hyperdrive_rating,
       passengers,
       manufacturer
-    } = this.props.starshipDetails.data;
+    } = this.props.starship.data;
 
     return (
       <div className="StarshipDetails">

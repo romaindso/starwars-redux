@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import Starship from '../Starship.js';
+import StarshipItem from '../ui/StarshipItem.js';
 import './StarshipsList.css';
 
 class StarshipsList extends Component {
@@ -15,7 +15,7 @@ class StarshipsList extends Component {
       <div className="StarshipsList">
         <h1>Starships</h1>
         {starships && starships.items ? starships.items.map((starship, i) => {
-          return <Starship key={i} starship={starship} />
+          return <StarshipItem key={i} starship={starship} />
         }) : null}
       </div>
     )
