@@ -5,7 +5,7 @@ import StarshipDetails from '../components/screens/StarshipDetails';
 
 const mapStateToProps = (state) => {
   return {
-    starship: state.starship
+    starships: state.starships
   }
 }
 
