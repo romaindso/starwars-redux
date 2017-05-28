@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as starshipsActions from '../actions/starships.js';
-import StarshipsList from '../components/screens/StarshipsList';
+import StarshipList from '../components/screens/StarshipList';
 
 const mapStateToProps = (state) => {
   return {
@@ -15,9 +15,9 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const StarshipsListContainer = connect(
+const StarshipListContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(StarshipsList)
+)(StarshipList)
 
-export default StarshipsListContainer
+export default StarshipListContainer

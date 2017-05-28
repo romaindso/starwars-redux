@@ -1,8 +1,10 @@
-.StarshipsList {
+.StarshipList, 
+.CharacterList {
   padding: 15px 0 20px 40px;
 }
 
-.StarshipsList > h1 {
+.StarshipList > h1,
+.CharacterList > h1 {
   padding-bottom: 5px;
   border-bottom: 1px solid #32383e;
   color: #ebd800;

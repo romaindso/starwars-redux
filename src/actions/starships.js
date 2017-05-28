@@ -6,7 +6,7 @@ const receiveStarships = data => {
   }
 }
 
-export const fetchStarship = () => {
+export const fetchStarships = () => {
   return function (dispatch) {
     return fetch('https://swapi.co/api/starships/')
     .then(response => {

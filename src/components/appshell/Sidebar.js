@@ -12,9 +12,9 @@ class Sidebar extends Component {
       <aside className="Sidebar">
         <ul>
           <li><Link to="/starships" activeStyle={ACTIVE}>Starships</Link></li>
+          <li><Link to="/characters">Characters</Link></li>
           <li><Link to="/">Species (!)</Link></li>
           <li><Link to="/">Planets (!)</Link></li>
-          <li><Link to="/">People (!)</Link></li>
           <li><Link to="/">Films (!)</Link></li>
         </ul>
       </aside>
