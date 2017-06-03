@@ -5,7 +5,7 @@ import CharacterDetails from '../components/screens/CharacterDetails';
 
 const mapStateToProps = (state) => {
   return {
-    character: state.character
+    characters: state.characters
   }
 }
 

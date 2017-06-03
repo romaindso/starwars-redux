@@ -14,7 +14,7 @@ class CharacterList extends Component {
     return (
       <div className="CharacterList">
         <h1>Characters</h1>
-        {characters && characters.items ? characters.items.map((character, i) => {
+        {characters.length ? characters.map((character, i) => {
           return <CharacterItem key={i} character={character} />
         }) : null}
       </div>

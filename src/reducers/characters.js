@@ -1,17 +1,24 @@
-const initialState = {
-  items: []
-};
+import character from './character';
 
-export default (state=initialState, action) => {
+export default (state=[], action) => {
 
   switch (action.type) {
     case 'RECEIVE_CHARACTERS':
-      return {...state, items: action.items.map(item => ({
-        id: item.url.match(/\/([0-9]+)\/$/)[1],
-        name: item.name,
-        gender: item.gender,
-        birthYear: item.birth_year,
-      }))}
+      return [...state, ...action.data.map(item => {
+        let act = {data: {...item}, type: action.type}
+        return character(undefined, act);
+      })];
+      //   id: item.url.match(/\/([0-9]+)\/$/)[1],
+      //   name: item.name,
+      //   gender: item.gender,
+      //   birthYear: item.birth_year,
+      // }))}
+
+    // case 'RECEIVE_CHARACTERS':
+    //   return [...state, ...action.data.map(item => {
+    //     let act = {data: {...item}, type: action.type}
+    //     return starship(undefined, act);
+    //   })];
 
     default:
       return state

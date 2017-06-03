@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './StarshipDetails.css';
+import './ItemDetails.css';
 
 class StarshipDetails extends Component {
 

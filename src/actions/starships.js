@@ -9,13 +9,13 @@ const receiveStarships = data => {
 export const fetchStarships = () => {
   return function (dispatch) {
     return fetch('https://swapi.co/api/starships/')
-    .then(response => {
-      return response.json();
-    }).then(data => {
-      dispatch(receiveStarships(data.results));
-    }).catch(err => {
-      console.log(err);
-    });
+      .then(response => {
+        return response.json();
+      }).then(data => {
+        dispatch(receiveStarships(data.results));
+      }).catch(err => {
+        console.log(err);
+      });
   }
 }
 
