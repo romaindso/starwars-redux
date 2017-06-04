@@ -1,4 +1,4 @@
-export const RECEIVE_CHARACTERS = 'RECEIVE_CHARACTERS';
+const RECEIVE_CHARACTERS = 'RECEIVE_CHARACTERS';
 const receiveCharacters = data => {
   return {
     type: RECEIVE_CHARACTERS,
@@ -18,6 +18,14 @@ export const fetchCharacters= () => {
       });
   }
 }
+
+// const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
+// export const setVisibilityFilter = visibilityFilter => {
+//   return {
+//     type: SET_VISIBILITY_FILTER,
+//     visibilityFilter
+//   }
+// }
 
 // export const RECEIVE_CHARACTER_DETAILS = "RECEIVE_CHARACTER_DETAILS";
 // const receiveCharacterDetails = data => ({
