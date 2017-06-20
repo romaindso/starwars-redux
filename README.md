@@ -3,7 +3,7 @@
 ## Run the app
 Clone this project, then run in your console :
 ```bash
-$ yarn install
+$ npm install
 ```
 
 Run the app
