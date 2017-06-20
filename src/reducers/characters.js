@@ -50,3 +50,8 @@ export const getVisibleCharacters = (state, filter) => {
   const allCharacters = getAllCharacters(state);
   return filter === 'all' ? allCharacters : allCharacters.filter(character => character.gender === filter)
 }
+
+export const getCharacter = (state, id) => {
+  return state.byId[id];
+}
+

@@ -4,8 +4,6 @@ import './ItemDetails.css';
 class CharacterDetails extends Component {
 
   render() {
-    const {id} = this.props.params;
-    const character = this.props.characters.filter(character => character.id === id)[0];
     const {
       name,
       birthYear,
@@ -14,7 +12,7 @@ class CharacterDetails extends Component {
       mass,
       eyeColor,
       hairColor
-    } = character;
+    } = this.props.character;
 
     return (
       <div className="CharacterDetails">
