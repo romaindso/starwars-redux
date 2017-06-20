@@ -1,3 +1,6 @@
+import { normalize } from 'normalizr';
+import * as schema from './schema';
+
 const RECEIVE_CHARACTERS = 'RECEIVE_CHARACTERS';
 const receiveCharacters = data => {
   return {
@@ -12,6 +15,9 @@ export const fetchCharacters= () => {
       .then(response => {
         return response.json();
       }).then(data => {
+        console.log('normalized response',
+          normalize(data.results, schema.arrayOfCharacters)
+        )
         dispatch(receiveCharacters(data.results));
       }).catch(err => {
         console.log(err);
