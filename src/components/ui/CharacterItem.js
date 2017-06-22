@@ -9,14 +9,14 @@ class CharacterItem extends Component {
       id,
       name,
       gender,
-      birthYear
+      birth_year
     } = this.props.character;
 
     return (
       <div className="CharacterItem">
         <div className="CharacterItem-wrapper-content">
           <Link to={`characters/${id}`}><h1>{name}</h1></Link>
-          <span>Birth year : {birthYear}</span>
+          <span>Birth year : {birth_year}</span>
           <p>Gender : {gender}</p>
         </div>
       </div>

@@ -1,17 +1,16 @@
 import { combineReducers } from 'redux';
-import character from './character';
 
 // Sub Reducers
 const byId = (state={}, action) => {
   switch (action.type) {
     case 'RECEIVE_CHARACTERS':
-      let newState = {...state};
-      action.data.map(item => {
-        let act = {data: {...item}, type: action.type};
-        let id = item.url.match(/\/([0-9]+)\/$/)[1];
-        newState[id] = character(undefined, act);
-      });
-      return newState;
+      if(action.data){
+        return {
+          ...state,
+          ...action.data.entities.characters
+        }
+      }
+      return state;
 
     default:
       return state;
@@ -21,11 +20,13 @@ const byId = (state={}, action) => {
 const allIds = (state = [], action) => {
   switch (action.type) {
     case 'RECEIVE_CHARACTERS':
-      const charactersIdList = action.data.map(item => {
-        let id = item.url.match(/\/([0-9]+)\/$/)[1];
-        return id;
-      })
-      return [...state, ...charactersIdList];
+      if(action.data){
+        return [
+          ...state, 
+          ...action.data.result
+        ];
+      }
+      return state;
 
     default: 
       return state;
