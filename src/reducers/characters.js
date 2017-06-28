@@ -1,12 +1,12 @@
-import starship from './starship.js';
+import character from './character';
 
 export default (state=[], action) => {
 
   switch (action.type) {
-    case 'RECEIVE_STARSHIPS':
+    case 'RECEIVE_CHARACTERS':
       return [...state, ...action.data.map(item => {
         let act = {data: {...item}, type: action.type}
-        return starship(undefined, act);
+        return character(undefined, act);
       })];
 
     default:

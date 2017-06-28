@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
-import './StarshipDetails.css';
+import './ItemDetails.css';
 
 class StarshipDetails extends Component {
 
-  componentWillMount(){
-    console.log(this.props);
-    const { params } = this.props
-    if(process.env.NODE_ENV !== 'production' && params.id){
-      this.props.starshipsActions.fetchStarshipDetails(params.id);
-    }
-  }
-
   render() {
+    const {id} = this.props.params;
+    const starship = this.props.starships.filter(starship => starship.id === id)[0];
     const {
       name,
       model,
@@ -20,7 +14,7 @@ class StarshipDetails extends Component {
       hyperdrive_rating,
       passengers,
       manufacturer
-    } = this.props.starship.data;
+    } = starship;
 
     return (
       <div className="StarshipDetails">

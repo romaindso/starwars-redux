@@ -1,0 +1,34 @@
+.StarshipItem,
+.CharacterItem {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  padding: 20px 0 0;
+}
+
+.StarshipItem:last-child,
+.CharacterItem:last-child {
+  border-right: 0;
+}
+
+.StarshipItem h1,
+.CharacterItem h1 {
+  font-size: 30px;
+  margin-top: 0;
+}
+
+.StarshipItem-wrapper-content a,
+.CharacterItem-wrapper-content a {
+  color: inherit;
+}
+
+.StarshipItem-wrapper-content a:hover,
+.CharacterItem-wrapper-content a:hover {
+  color: #ebd800;
+  text-decoration: none;
+}
+
+.StarshipItem-wrapper-content span,
+.CharacterItem-wrapper-content span {
+  font-size: 20px;
+}
