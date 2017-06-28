@@ -18,22 +18,3 @@ export const fetchStarships = () => {
       });
   }
 }
-
-// export const RECEIVE_STARSHIP_DETAILS = "RECEIVE_STARSHIP_DETAILS";
-// const receiveStarshipDetails = data => ({
-//   type: RECEIVE_STARSHIP_DETAILS,
-//   data
-// })
-
-// export const fetchStarshipDetails = (starshipId) => {
-//   return function (dispatch) {
-//     return fetch(`https://swapi.co/api/starships/${starshipId}`)
-//     .then(response => {
-//       return response.json();
-//     }).then(data => {
-//       dispatch(receiveStarshipDetails(data));
-//     }).catch(err => {
-//       console.log(err);
-//     });
-//   }
-// }
