@@ -3,11 +3,11 @@
 ## Run the app
 Clone this project, then run in your console :
 ```bash
-$ yarn install
+$ yarn
 ```
 
 Run the app
 ```bash
-$ npm start
+$ yarn start
 ```
 By default the app is available on [http://localhost:3000](http://localhost:3000)
