@@ -1,23 +1,7 @@
-import { normalize } from 'normalizr';
-import * as schema from './schema';
+import { CHARACTERS_REQUEST } from '../constants/type';
 
-const RECEIVE_CHARACTERS = 'RECEIVE_CHARACTERS';
-const receiveCharacters = data => {
+export const fetchCharacters = () => {
   return {
-    type: RECEIVE_CHARACTERS,
-    data
-  }
-}
-
-export const fetchCharacters= () => {
-  return function (dispatch) {
-    return fetch('https://swapi.co/api/people/')
-      .then(response => {
-        return response.json();
-      }).then(data => {
-        dispatch(receiveCharacters(normalize(data.results, schema.arrayOfCharacters)));
-      }).catch(err => {
-        console.log(err);
-      });
+    type: CHARACTERS_REQUEST
   }
 }
