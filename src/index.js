@@ -2,16 +2,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
-import configureStore from './store/configureStore';
+import configureStore, {sagaMiddleware} from './store/configureStore';
 import thunk from 'redux-thunk';
 import App from './components/appshell/App';
 import StarshipList from './containers/StarshipList';
 import StarshipDetails from './containers/StarshipDetails';
 import CharacterList from './containers/CharacterList';
 import CharacterDetails from './containers/CharacterDetails';
+import rootSaga from "./sagas";
 import './index.css';
 
 const store = configureStore([ thunk ]);
+sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(
   <Provider store={ store }>
