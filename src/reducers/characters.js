@@ -3,7 +3,7 @@ import { combineReducers } from 'redux';
 // Sub Reducers
 const byId = (state={}, action) => {
   switch (action.type) {
-    case 'RECEIVE_CHARACTERS':
+    case 'CHARACTERS_REQUEST_SUCCESS':
       if(action.data){
         return {
           ...state,
@@ -19,7 +19,7 @@ const byId = (state={}, action) => {
 
 const allIds = (state = [], action) => {
   switch (action.type) {
-    case 'RECEIVE_CHARACTERS':
+    case 'CHARACTERS_REQUEST_SUCCESS':
       if(action.data){
         return [
           ...state, 

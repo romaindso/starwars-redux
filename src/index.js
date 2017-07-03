@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Route, IndexRedirect, hashHistory } from 'react-router';
 import { Provider } from 'react-redux';
-import configureStore, {sagaMiddleware} from './store/configureStore';
+import configureStore, { sagaMiddleware } from './store/configureStore';
 import thunk from 'redux-thunk';
 import App from './components/appshell/App';
 import StarshipList from './containers/StarshipList';
