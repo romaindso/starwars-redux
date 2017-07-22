@@ -14,3 +14,6 @@ export default (state=[], action) => {
   }
 
 }
+
+// TODO 
+// Write here your first selector 

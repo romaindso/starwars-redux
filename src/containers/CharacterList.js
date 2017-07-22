@@ -6,6 +6,9 @@ import CharacterList from '../components/screens/CharacterList';
 const mapStateToProps = (state, props) => {
   let activeFilter = props.location.query.activeFilter || 'all';
   return {
+    // TODO
+    // Here you call your selector instead of reading the state directly
+    // Don't forget to import it from the related reducer
     characters: activeFilter === 'all' ? state.characters : state.characters.filter(character => character.gender === activeFilter)
   }
 }
