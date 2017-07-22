@@ -4,6 +4,8 @@ import character from './character';
 // Sub Reducers
 const byId = (state={}, action) => {
   switch (action.type) {
+    // TODO
+    // Update the logic reducer based on the new data shape received in the action
     case 'RECEIVE_CHARACTERS':
       let newState = {...state};
       action.data.map(item => {
@@ -19,6 +21,8 @@ const byId = (state={}, action) => {
 }
 
 const allIds = (state = [], action) => {
+  // TODO
+  // Update the logic reducer based on the new data shape received in the action
   switch (action.type) {
     case 'RECEIVE_CHARACTERS':
       const charactersIdList = action.data.map(item => {

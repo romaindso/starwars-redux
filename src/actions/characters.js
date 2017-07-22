@@ -6,6 +6,8 @@ const receiveCharacters = data => {
   }
 }
 
+// TODO 
+// Declare a normalizr schema and use it on the fetched data
 export const fetchCharacters= () => {
   return function (dispatch) {
     return fetch('https://swapi.co/api/people/')
@@ -18,30 +20,3 @@ export const fetchCharacters= () => {
       });
   }
 }
-
-// const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER';
-// export const setVisibilityFilter = visibilityFilter => {
-//   return {
-//     type: SET_VISIBILITY_FILTER,
-//     visibilityFilter
-//   }
-// }
-
-// export const RECEIVE_CHARACTER_DETAILS = "RECEIVE_CHARACTER_DETAILS";
-// const receiveCharacterDetails = data => ({
-//   type: RECEIVE_CHARACTER_DETAILS,
-//   data
-// })
-
-// export const fetchCharacterDetails = (characterId) => {
-//   return function (dispatch) {
-//     return fetch(`https://swapi.co/api/people/${characterId}`)
-//     .then(response => {
-//       return response.json();
-//     }).then(data => {
-//       dispatch(receiveCharacterDetails(data));
-//     }).catch(err => {
-//       console.log(err);
-//     });
-//   }
-// }
