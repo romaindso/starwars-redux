@@ -5,6 +5,9 @@ class CharacterDetails extends Component {
 
   render() {
     const {id} = this.props.params;
+    // TODO
+    // Instead of filtering characters in the CharacterDetails component, display the character 
+    // received by props  
     const character = this.props.characters.filter(character => character.id === id)[0];
     const {
       name,
