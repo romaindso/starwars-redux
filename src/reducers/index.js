@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
 import starships from './starships.js';
-import starshipDetails from './starshipDetails.js';
+import characters from './characters.js';
 
 export default combineReducers({
-  starships,
-  starshipDetails
+  characters,
+  starships
 })

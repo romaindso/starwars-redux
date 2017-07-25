@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-import './Starship.css';
+import './Item.css';
 
-class Starship extends Component {
+class StarshipItem extends Component {
 
   render() {
     const {
@@ -13,8 +13,8 @@ class Starship extends Component {
     } = this.props.starship;
 
     return (
-      <div className="Starship">
-        <div className="Starship-wrapper-content">
+      <div className="StarshipItem">
+        <div className="StarshipItem-wrapper-content">
           <Link to={`starships/${id}`}><h1>{name}</h1></Link>
           <span>{model}</span>
           <p>Length : {length} (meters)</p>
@@ -24,4 +24,4 @@ class Starship extends Component {
   }
 }
 
-export default Starship;
+export default StarshipItem;
